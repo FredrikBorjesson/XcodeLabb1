@@ -18,23 +18,36 @@
 
 @implementation ViewController
 
+extern double redColor;
+extern double greenColor;
+extern double blueColor;
+
+UIColor *choosenColor;
+
 -(void)refreshColorViev{
     self.colorView.backgroundColor = [self currentColor];
 }
 
 -(UIColor*) currentColor{
-    return [UIColor colorWithRed:self.redSlider.value
-                           green:self.greenSlider.value
-                           blue:self.blueSlider.value
+    return [UIColor colorWithRed:redColor
+                           green:greenColor
+                           blue:blueColor
                            alpha:1.0];
 }
 
--(IBAction)sliderChanged:(UISlider *)sender{
+
+
+
+-(IBAction)SliderChanged:(UISlider *)sender{
+    redColor = self.redSlider.value;
+    greenColor = self.greenSlider.value;
+    blueColor = self.blueSlider.value;
     [self refreshColorViev];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self refreshColorViev];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="IpL-UK-PEe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pxG-jA-jbt">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,10 +9,26 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="LxQ-Yq-xSL">
+            <objects>
+                <navigationController id="pxG-jA-jbt" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Uwe-LC-mDe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tTb-2n-SxO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JDL-dx-Sfu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-720" y="10"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -35,7 +51,6 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Välkommen till Fredriks App" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3EX-TW-EVh">
                                 <rect key="frame" x="27" y="117" width="267" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="0.013923164031875514" green="0.0" blue="0.67214087041884818" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="28"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -66,9 +81,6 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="LfV-1n-UgX"/>
-                    <connections>
-                        <outlet property="colorView" destination="8bC-Xf-vdC" id="Bne-7z-KhX"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -94,8 +106,8 @@
                                 <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="20170114_134829.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ar6-ef-R9H">
-                                <rect key="frame" x="81" y="100" width="159" height="209"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mig" translatesAutoresizingMaskIntoConstraints="NO" id="XKr-68-0DZ">
+                                <rect key="frame" x="77" y="123" width="158" height="193"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -104,12 +116,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zbh-a3-Tra" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-719.20000000000005" y="770.46476761619192"/>
+            <point key="canvasLocation" x="-720" y="770.07042253521126"/>
         </scene>
         <!--Kontakt-->
         <scene sceneID="7fj-wv-FxX">
             <objects>
-                <viewController title="Kontakt" id="gVT-nP-vrd" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="Kontakt" automaticallyAdjustsScrollViewInsets="NO" id="gVT-nP-vrd" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="r1y-5g-i4j"/>
                         <viewControllerLayoutGuide type="bottom" id="038-ex-zKV"/>
@@ -119,7 +131,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Mail: fredrik.m.borjesson@gmail.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BJ3-DE-gmh">
-                                <rect key="frame" x="16" y="177" width="287" height="128"/>
+                                <rect key="frame" x="16" y="265" width="287" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -131,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sho-Iu-tjU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="771.36431784107947"/>
+            <point key="canvasLocation" x="31.875" y="771.12676056338034"/>
         </scene>
         <!--Inställningar-->
         <scene sceneID="0En-i8-PXj">
@@ -145,25 +157,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="B1S-BY-TbL">
-                                <rect key="frame" x="105" y="201" width="194" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="sliderChanged:" destination="hs5-0v-zdD" eventType="valueChanged" id="XNJ-nt-hGb"/>
-                                </connections>
-                            </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="IDM-dm-TD1">
                                 <rect key="frame" x="105" y="261" width="194" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="sliderChanged:" destination="hs5-0v-zdD" eventType="valueChanged" id="RZs-iJ-yGp"/>
+                                    <action selector="SliderChanged:" destination="hs5-0v-zdD" eventType="valueChanged" id="fLA-qK-0aJ"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kmK-Zs-gZC">
                                 <rect key="frame" x="105" y="318" width="194" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="sliderChanged:" destination="hs5-0v-zdD" eventType="valueChanged" id="zWU-cH-BXS"/>
+                                    <action selector="SliderChanged:" destination="hs5-0v-zdD" eventType="valueChanged" id="E2M-QM-j0D"/>
                                 </connections>
                             </slider>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Red" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Zi2-Px-A17">
@@ -191,40 +196,29 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="B1S-BY-TbL">
+                                <rect key="frame" x="105" y="201" width="194" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="SliderChanged:" destination="hs5-0v-zdD" eventType="valueChanged" id="FlH-fD-hrX"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="blueSlider" destination="kmK-Zs-gZC" id="J5v-9I-uee"/>
-                        <outlet property="colorView" destination="wG0-0l-lhe" id="z0Z-ZY-SZq"/>
-                        <outlet property="greenSlider" destination="IDM-dm-TD1" id="HMF-1G-h5O"/>
-                        <outlet property="redSlider" destination="B1S-BY-TbL" id="lQD-Mb-xHW"/>
+                        <outlet property="blueSlider" destination="kmK-Zs-gZC" id="jJg-Hf-mc8"/>
+                        <outlet property="colorView" destination="wG0-0l-lhe" id="5iW-MI-1F7"/>
+                        <outlet property="greenSlider" destination="IDM-dm-TD1" id="dke-xF-l75"/>
+                        <outlet property="redSlider" destination="B1S-BY-TbL" id="o78-ts-jQQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KTc-JG-W6Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="840" y="770.07042253521126"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="RNT-ZH-iQu">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IpL-UK-PEe" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ftS-ON-UUc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zSv-2N-F9X"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tXS-HS-lpz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-719" y="11"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="20170114_134829.jpg" width="1944" height="2592"/>
+        <image name="Mig" width="1944" height="2592"/>
     </resources>
 </document>

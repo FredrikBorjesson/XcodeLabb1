@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
+double redColor;
+double greenColor;
+double blueColor;
+
 int main(int argc, char * argv[]) {
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
